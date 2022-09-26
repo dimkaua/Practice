@@ -1,0 +1,19 @@
+@import "global/mixins";
+@import "global/vars";
+
+*{
+  margin: 0;
+  padding: 0;
+}
+.container{
+  min-width: 320px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@import "hero/hero";
+@import "statistics/statistics";
+@import "reviews/reviews";
+@import "examples/examples";
+@import "offers/offers";
+

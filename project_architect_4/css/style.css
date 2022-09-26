@@ -1,0 +1,325 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.header {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #313131;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.header-img {
+  height: 100%;
+  width: 81px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-name {
+  font-weight: 700;
+  font-size: 22px;
+  color: #fff;
+}
+
+.header-menu {
+  width: 722px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.header-menu-list {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+
+.menu-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu-link:hover {
+  color: #14b9d5;
+}
+
+.search {
+  height: 100%;
+  width: 68px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000000;
+}
+
+.header-title {
+  background-image: url(../image/header-bg.jpeg);
+  height: 369px;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.title {
+  font-size: 27px;
+  font-weight: 700;
+  margin: 49px 0 52px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.touch {
+  display: flex;
+  justify-content: space-between;
+  width: 360px;
+  margin: 24px 0px 74px;
+}
+
+.btn {
+  font-size: 18px;
+  width: 170px;
+  height: 55px;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: none;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.green {
+  background: #89ca62;
+}
+
+.blue {
+  background: #14b9d5;
+}
+
+.posts-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 75px;
+}
+
+.title-two {
+  color: #18b4cf;
+  font-size: 27px;
+  font-weight: bold;
+  padding: 50px 0px;
+}
+
+.posts-img {
+  width: 1170px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container {
+  text-align: center;
+}
+
+.post-dscr {
+  font-size: 18px;
+  line-height: 60px;
+  margin-bottom: 30px;
+  background-color: #fff;
+  color: #353a3d;
+  font-weight: bold;
+}
+
+.popular-client {
+  background-image: url(../image/parallax-bg.jpeg);
+  height: 590px;
+  display: grid;
+  background-attachment: fixed;
+  grid-template-rows: 106px 44px 87px 3px 105px 52px 190px;
+  grid-template-columns: 1fr 265px 197px 282px 141px 1fr;
+}
+
+.title-parallax {
+  margin: 0;
+  text-align: center;
+  grid-area: 2 / 2 / 3 / 6;
+}
+
+.popular-client .title-client {
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.linea {
+  display: inline-block;
+  width: 60px;
+  height: 3px;
+  grid-area: 4 / 2 / 5 / 6;
+  justify-self: center;
+  background: #18b4cf;
+}
+
+.client {
+  justify-self: start;
+  align-self: center;
+}
+
+.client:nth-of-type(1) {
+  grid-area: 6 / 2 / 7 / 3;
+}
+
+.client:nth-of-type(2) {
+  grid-area: 6 / 3 / 7 / 4;
+}
+
+.client:nth-of-type(3) {
+  grid-area: 6 / 4 / 7 / 5;
+}
+
+.client:nth-of-type(4) {
+  grid-area: 6 / 5 / 7 / 6;
+}
+
+.top-rated {
+  background-color: #fff;
+  text-align: center;
+}
+
+.rated-title {
+  font-size: 27px;
+  font-weight: bold;
+  color: #18b4cf;
+  padding: 50px 0px;
+}
+
+.top-rated-img {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.rated-img {
+  max-width: 100%;
+}
+
+.hot-news {
+  background-color: #fff;
+  text-align: center;
+}
+
+.hot-new-title {
+  font-size: 27px;
+  font-weight: bold;
+  color: #18b4cf;
+  padding: 50px 0px;
+}
+
+.hn-content {
+  width: 1170px;
+  margin: 0 auto 77px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.hn-build {
+  background-color: #f9f7f7;
+}
+
+.hn-build-1 {
+  grid-column: 1 / 4;
+}
+
+.hn-build-3,
+.hn-build-5 {
+  grid-column: 1 / 3;
+}
+
+.hn-build-4,
+.hn-build-6 {
+  grid-column: 3 / 5;
+}
+
+.hn-build-8 {
+  grid-column: 2 / 5;
+}
+
+.img-3,
+.img-4,
+.img-5,
+.img-6 {
+  width: 100%;
+}
+
+.img-1,
+.img-8 {
+  float: left;
+}
+
+.hn-title {
+  font-size: 18px;
+  font-weight: 700;
+  padding-bottom: 14.5px;
+}
+
+.one-title {
+  padding-top: 15px;
+}
+
+.news-dscr {
+  font-size: 14px;
+  font-weight: 600;
+  color: #5b6469;
+  line-height: 21px;
+  padding-left: 15px;
+}
+
+.news-text {
+  text-align: end;
+}
+
+.news-text-right {
+  padding: 40px 25px 0 0;
+}
+
+.news-text-bottom {
+  padding: 15px;
+}
+
+.footer {
+  height: 80px;
+  display: grid;
+  grid-template-columns: 1fr 1170px 1fr;
+  color: #fff;
+  background: #000;
+}
+
+.footer-zone {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  grid-column: 2 / 3;
+  flex-direction: row;
+}
+
+.footer-copyright {
+  font-size: 13px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.liot-logo-name {
+  padding-bottom: 8px;
+}

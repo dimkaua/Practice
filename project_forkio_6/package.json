@@ -1,0 +1,41 @@
+{
+  "name": "forkio",
+  "version": "1.0.0",
+  "description": "Gulp - взят готовый вариант сборки.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dimkaua"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dimkaua"
+  },
+  "homepage": "https://github.com/dimkaua",
+  "devDependencies": {
+    "browser-sync": "^2.26.14",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean": "^0.4.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-css-minify": "^0.9.2",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-js-minify": "0.0.3",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-uglify": "^3.0.2",
+    "vinyl-buffer": "^1.0.1"
+  },
+  "dependencies": {
+    "mozjpeg": "^6.0.1",
+    "optipng-bin": "^6.0.0"
+  }
+}

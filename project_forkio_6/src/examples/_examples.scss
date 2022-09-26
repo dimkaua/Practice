@@ -1,0 +1,157 @@
+@import "../global/mixins";
+@import "../global/vars";
+
+.examples{
+
+  &__info-block{
+    min-width: 300px;
+    max-width: 1200px;
+    padding: 0 10px;
+    margin: 120px auto 76px;
+  }
+  &__title{
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 38px;
+    text-align: center;
+    color: #8D81AC;
+  }
+  &__title--hidden{
+    display: none;
+  }
+  &__img-container{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 519px;
+    overflow: hidden;
+  }
+  &__img{
+    padding: 0 -10px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    min-width: 320px;
+    max-width: 700px;
+    height: auto;
+  }
+
+  &__paragraphs{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    align-content: center;
+  }
+}
+
+.paragraph{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  gap: 32px;
+  &__image{
+    margin-top: 38px ;
+  }
+  &__image--move{
+    margin-left: 20px;
+  }
+  &__title{
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    color: #323232;
+    margin-top: 25px;
+    display: block;
+  }
+  &__desc{
+    font-family: Lato, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: #848E97;
+    margin-top: 15px;
+  }
+}
+@media (min-width: 481px) {
+  .paragraph{
+    flex-direction: row;
+    align-items: unset;
+    &__image{
+      margin: 28px auto ;
+    }
+    &__image--move{
+      margin-left: 20px;
+    }
+    &__text {
+      display: flex;
+      flex-direction: column;
+    }
+    &__title{
+      text-align: start;
+      margin-bottom: 0;
+    }
+    &__desc{
+      text-align: start;
+    }
+    &__wrapper{
+      min-width: 120px;
+      text-align: center;
+    }
+  }
+}
+
+@media (min-width: 700px) {
+  .examples__img{
+    left: unset;
+    right: 0;
+  }
+}
+
+@media (min-width: 993px) {
+
+  .examples{
+    background: #F4F4F4;
+    display: flex;
+    gap: 50px;
+    &__info-block{
+      max-width: 1200px;
+    }
+    &__img{
+      left: 0;
+      right: unset;
+    }
+    &__cheat{
+      align-self: end;
+      margin-top: 120px ;
+    }
+    &__title{
+      font-size: 42px;
+      line-height: 44px;
+      display: none;
+      width: 610px;
+    }
+    &__title--hidden{
+      display: block;
+    }
+    &__img-container{
+      max-width: 700px;
+      margin: 0;
+    }
+  }
+  .paragraph{
+    max-width: 520px;
+  }
+  .examples-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+  }
+}

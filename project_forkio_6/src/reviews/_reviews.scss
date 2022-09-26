@@ -1,0 +1,133 @@
+@import "../global/mixins";
+@import "../global/vars";
+
+.reviews {
+position: relative;
+}
+
+.reviews-bg{
+  background-image: url("../../dist/img/testmonials-bg 1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: fit-content;
+  margin-bottom: -15px;
+}
+
+.reviews-container {
+  min-width: 320px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.reviews {
+  &__title {
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    padding: 57px 10px 53px;
+  }
+}
+
+.reviews-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.reviews-item {
+  margin: 0 auto 25px;
+  width: 270px;
+
+  &__img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  &__desc {
+    font-style: italic;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    font-family: 'Lato', sans-serif;
+    margin-top: 30px;
+  }
+}
+
+.reviews__desc{
+  text-align: center;
+  color: #A291A5;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  font-family: 'Lato', sans-serif;
+  min-width: 250px;
+  max-width: 888px;
+  margin: 37px auto 22px;
+  padding: 0 10px;
+
+}
+
+.reviews__hr{
+  min-width: 245px;
+  max-width: 780px;
+  height: 2px;
+  margin: 0 40px;
+  background: #645766;
+  border: none;
+
+}
+
+@media (min-width: 481px) {
+  .reviews-items{
+    gap: 15px;
+  }
+  .reviews-item{
+    width: 350px;
+    margin-bottom: 60px;
+  }
+  .reviews__hr{
+    margin: 0 105px;
+  }
+  .reviews__title{
+    font-size: 42px;
+    line-height: 44px;
+    padding: 85px 10px;
+  }
+}
+
+
+
+@media (min-width: 993px) {
+  .reviews-items{
+    gap: 45px;
+  }
+  .reviews-item{
+    width: 270px;
+    margin-bottom: 110px;
+  }
+  .reviews__hr{
+    margin: 0 300px;
+  }
+  .reviews__title{
+    font-size: 48px;
+    line-height: 50px;
+    padding: 110px 10px 80px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .reviews-item{
+    width: 350px;
+  }
+
+}

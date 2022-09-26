@@ -1,0 +1,99 @@
+@import "../global/mixins";
+@import "../global/vars";
+
+.statistics{
+  margin: 120px auto 0;
+  min-width: 300px;
+  max-width: 768px;
+  padding: 0 10px;
+    @media (min-width: 481px) {
+      margin-top: 260px;
+      margin-bottom: 160px;
+    }
+  @media (min-width: 993px) {
+    margin-top: 240px;
+    margin-bottom: 70px;
+  }
+
+  &__title{
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #635C73;
+    @media (min-width: 481px) {
+      font-size: 42px;
+      line-height: 42px;
+    }
+    @media (min-width:993px) {
+      font-size: 54px;
+      line-height: 54px;
+    }
+  }
+  &__desc{
+    font-family: Lato, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #323232;
+    margin-top: 27px;
+  }
+  @media (min-width: 481px) {
+    font-size: 21px;
+    line-height: 32px;
+  }
+
+
+}
+.buttons{
+  font-family: Lato, sans-serif;
+  margin: 35px auto 0;
+  display: flex;
+  min-width: 300px;
+  max-width: 768px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  gap: 15px;
+  &__elem {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    border: 1px solid #B6B6B4;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  &__font{
+    background: linear-gradient(180deg, rgb(252, 252, 252), rgb(211, 211, 211));
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    padding: 6px 7px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    border-right: 1px solid #B6B6B4;
+  }
+  &__desc{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    margin: 0 5px;
+  }
+}
+.fa-eye{
+  margin: 0 5px;
+}
+.fa-star{
+  margin: 0 5px;
+}
+.fa-code-branch{
+  margin: 0 5px;
+}
+
